@@ -81,5 +81,5 @@ if __name__ == '__main__':
     # print(cosine_similarity(word_to_vec_map['apple'], word_to_vec_map['orange']))
     triads_to_try = [('italy', 'italian', 'spain'), ('india', 'delhi', 'japan'), ('man', 'woman', 'boy'),
                      ('small', 'smaller', 'large')]
-    # for triad in triads_to_try:
-    #     print('{} -> {} :: {} -> {}'.format(*triad, complete_analogy(*triad, word_to_vec_map)))
+    for triad in triads_to_try:
+        print('{} -> {} :: {} -> {}'.format(*triad, complete_analogy(*triad, word_to_vec_map)))
